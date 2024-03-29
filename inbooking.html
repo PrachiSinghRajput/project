@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Form with Image</title>
+<style>
+  /* CSS styling for the form */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  input[type=text], input[type=email], input[type=tel], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<header>
+        <h1> KK Technical Service s</h1>
+    </header>
+    <nav>
+      <a href="./inhome.html">Home</a>
+      <a href="./inservice.html">Services</a>
+      <a href="./login_page.html">Log In</a>
+      <a href="./inbooking.html">Booking</a>
+    </nav>
+<h2>Booking Form</h2>
+
+<p>As EAZY BOOKING is having manual booking system, they are facing some problems issuing booking requests of customers. All the necessary booking stuffs are being done in hard copy. So it become much difficult for staffs to keep the records updated all the time.</p>
+
+<div class="container">
+  <img src="b3.jpg" alt="Booking Image" style="max-width: 100%;">
+  <h2>Booking Form</h2>
+  <form action="https://script.google.com/macros/s/AKfycbybTal64FUKNOrG5R4BNwto1SOfXGvUQqt8qa-HagWWzw-2Pj7K6_n9wZ3MDEUg2Gxf2Q/exec" method="post">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="service">Service:</label>
+    <select id="service" name="service" required>
+      <option selected hidden value="">Select a service</option>
+      <option value="Dish tv">Dish tv</option>
+      <option value="CCTV">CCTV</option>
+      <option value="mobile">mobile</option>
+      <option value="APIs">APIs</option>
+    </select><br>
+
+<label for="Technician">Technician</label><br>
+        <select id="technician" name="technician" required>
+            <option selected hidden value="">Select a Technician</option>
+            <option value="Prachi singh">Prachi singh</option>
+            <option value="Suraj jadhav">Suraj jadhav</option>
+            <option value="Suyog Ohal">Suyog Ohal</option>
+            
+        </select><br>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" style="height:100px" required></textarea>
+
+    <input type="submit" value="Book Now">
+  </form>
+</div>
+
+</body>
+</html>
